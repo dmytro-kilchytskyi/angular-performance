@@ -1,0 +1,14 @@
+.wrapper {
+  padding: 2rem;
+  background-color: aquamarine;
+}
+
+.wrapper__btns {
+  display: flex;
+  justify-content: space-around;
+}
+
+.simple-btn {
+  padding: 1rem;
+  display: block;
+}

@@ -1,0 +1,15 @@
+<div class="wrapper">
+  <div class="wrapper__btns">
+    <button class="simple-btn" (click)="showSimpleComponent()">
+      Show component without module dependencies
+    </button>
+
+    <button class="simple-btn" (click)="showUserWidget()">
+      Show component with module dependencies
+    </button>
+  </div>
+
+  <br />
+
+  <ng-container #containerRef></ng-container>
+</div>

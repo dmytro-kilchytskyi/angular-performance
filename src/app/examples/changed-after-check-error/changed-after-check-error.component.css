@@ -1,0 +1,14 @@
+.wrapper {
+  display: inline-block;
+  padding: 1rem;
+}
+
+.controls {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.controls__flag label {
+  margin: 0.4rem;
+}

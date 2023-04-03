@@ -1,0 +1,16 @@
+<div class="wrapper">
+  <h2>Time: {{ time | date: "hh:mm:ss:SSS" }}</h2>
+
+  <div class="controls">
+    <input
+      type="button"
+      value="Update time"
+      (click)="triggerChangeDetection()"
+    />
+
+    <div class="controls__flag">
+      <label for="flag">Fix error</label>
+      <input id="flag" type="checkbox" (click)="updateFlag()" />
+    </div>
+  </div>
+</div>

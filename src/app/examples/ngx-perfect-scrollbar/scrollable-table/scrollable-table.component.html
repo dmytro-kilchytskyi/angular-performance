@@ -1,0 +1,25 @@
+<perfect-scrollbar class="scrollbar">
+  <table class="table">
+    <thead>
+      <th><input type="checkbox" (change)="selectAll($event.target)" /></th>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Position</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let entity of ENTITIES; let i = index">
+        <td>
+          <input
+            #checkbox
+            type="checkbox"
+            [disabled]="!!entity.disabled"
+            (change)="onChange()"
+          />
+        </td>
+        <td>{{ i }}</td>
+        <td>{{ entity.name }}</td>
+        <td>{{ entity.position }}</td>
+      </tr>
+    </tbody>
+  </table>
+</perfect-scrollbar>
