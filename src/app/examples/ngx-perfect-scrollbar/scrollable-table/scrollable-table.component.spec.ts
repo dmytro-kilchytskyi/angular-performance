@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { ScrollableTableComponent } from './scrollable-table.component';
+import { PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
 
 describe('ScrollableTableComponent', () => {
   let component: ScrollableTableComponent;
@@ -8,9 +8,9 @@ describe('ScrollableTableComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ScrollableTableComponent ]
-    })
-    .compileComponents();
+      declarations: [ScrollableTableComponent],
+      imports: [PerfectScrollbarModule],
+    }).compileComponents();
   });
 
   beforeEach(() => {
